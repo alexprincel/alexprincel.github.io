@@ -71,6 +71,3 @@ However, with the parameters that I have tested here, it seems like HDF5 is a re
 
 Hopefully, this article will help some to open up to other data formats and/or give them a bit more thought.
 
-https://www.benfrederickson.com/dont-pickle-your-data/
-http://matthewrocklin.com/blog/work/2015/03/16/Fast-Serialization
-https://stackoverflow.com/questions/17098654/how-to-store-a-dataframe-using-pandas
