@@ -36,6 +36,7 @@ The following visualization illustrates some clear winners and some clear losers
 
 <img src="./results.svg">
 
+---
 Execution times
 ---
 Read (ms) | Write (ms) | File Extension
