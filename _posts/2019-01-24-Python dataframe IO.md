@@ -63,15 +63,6 @@ While speed is definitely a significant factor when data set sizes increase, oth
 
 - **Security:** Again, this item is geared towards `pickle`. There are security considerations with regards to unpickling malicious pickle files. In applications where there may be files coming from external sources, this may be a deal breaker. For other applications, this may be a non-issue.
 
-# Kicking into overdrive with parallelization using Dask
-
-
-- Pandas doesn't make full use of all CPU cores available, therefore leaving a lot of performance on the table
-
-- Dask package enables parallel computing to scale computations to node clusters but also enables single-node parallelization through multi-threading / multi-processing
-
-- On the same dataset, Dask is demonstrably and significantly faster than "vanilla Pandas".
-
 # Conclusion
 
 Definitely, this article only scratches the surface of different Python file I/O techniques when working with dataframes. Some use cases may open up certain possibilities not available in other cases (e.g. because of data size or data types) and there are a host of packages and tools for this job that where unexplored. I'll briefly mention Dask here, which I haven't extensively tested but that delivers promising results efficiency-wise. Also, even within the parameters explored in this article, some techniques were not used here that may be used to positively affect the loading speed, such as specifying data types up-front.
