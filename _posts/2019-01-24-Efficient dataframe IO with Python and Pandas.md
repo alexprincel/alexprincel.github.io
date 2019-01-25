@@ -1,7 +1,3 @@
-# Introduction
-
-**Context**
-
 In the course of my work, I've frequently had to collect data from various sources only to have to store it again for later analysis. While there are many different tools and languages for this job and many different means to store the resulting data, my usual *modus operandi* is to use Python and store the resulting work in CSV files. I wanted to know if there are more efficient ways to perform this type of task using Python's `pandas` package, so I investigated and thought I'd share it here. In this context, I define efficient mostly by execution time, with bonus points for lower disk usage.
 
 By the end of this article, I hope to be able to provide some guidance on how to answer the following two questions:
@@ -21,7 +17,7 @@ To perform comparisons, I have used the Kaggle powerlifting training dataset as 
 
 Those limitations were not addressed in this current article but may be in subsequent ones.
 
-# Comparing pandas I/O for usual data file types
+**Comparing pandas I/O for usual data file types**
 
 In order to perform the comparison of I/O performance, I have first loaded the full dataset into a `pandas` dataframe and exported it to the following formats:
 
@@ -53,7 +49,7 @@ While speed is definitely a significant factor when data set sizes increase, oth
 
 - **Security:** Again, this item is geared towards `pickle`. There are security considerations with regards to unpickling malicious pickle files. In applications where there may be files coming from external sources, this may be a deal breaker. For other applications, this may be a non-issue.
 
-# Conclusion
+# Wrapping it up
 
 Definitely, this article only scratches the surface of different Python file I/O techniques when working with dataframes. Some use cases may open up certain possibilities not available in other cases (e.g. because of data size or data types) and there are a host of packages and tools for this job that where unexplored. I'll briefly mention Dask here, which I haven't extensively tested but that delivers promising results efficiency-wise. Also, even within the parameters explored in this article, some techniques were not used here that may be used to positively affect the loading speed, such as specifying data types up-front.
 
