@@ -34,7 +34,7 @@ Each file type was then tested with the `testit` module for both read / write ex
 
 The following visualization illustrates some clear winners and some clear losers as far as execution time is concerned. The full table follows immediately.
 
-<img src="_posts/results.svg">
+<img src="/images/art_01_results.svg">
 
 ---
 Execution times
