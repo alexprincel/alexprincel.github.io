@@ -32,19 +32,9 @@ In order to perform the comparison of I/O performance, I have first loaded the f
 
 Each file type was then tested with the `testit` module for both read / write execution time over an average of five executions to smooth any bump in computer performance. 
 
-The following visualization illustrates some clear winners and some clear losers as far as execution time is concerned. The full table follows immediately.
+The following visualization illustrates some clear winners and some clear losers as far as execution time is concerned.
 
 <img src="/images/art_01_results.svg">
-
----
-Execution times
----
-Read (ms) | Write (ms) | File Extension
-:---: | :---: | :---:
-1,102 | 5,460 | CSV
-277 | 542 | HDF5
-9,637 | 1,369 | JSON
-176 | 370 | Pickle
 
 While this exercise is probably unfair to JSON, given that its primary design purpose is not to store large tabular data but rather to allow for flexible and hierarchical data formats, it does distinguish itself clearly as non-viable for storing dataframe-type data.
 
